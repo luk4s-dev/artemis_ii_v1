@@ -4,6 +4,10 @@
     padding: 0;
     margin: 0;
     border: 0;
+
+    overflow-x: hidden;
+
+    box-sizing: border-box;
 }
 
 body {
@@ -12,6 +16,9 @@ body {
 
 svg {
     position: absolute;
+
+    left: 20px;
+    top: 20px;
 }
 
 nav.nav-bar {
@@ -26,6 +33,8 @@ nav.nav-bar {
 }
 
 h1#title {
+    margin-left: 75px;
+
     color: #FFF;
     font-family: "Public Sans", sans-serif;
     font-size: 2.25rem;
@@ -172,7 +181,7 @@ section.artemisCrew > p:nth-child(3) {
     font-size: 1.25rem;
     font-weight: bold;
 
-    margin: 0px 0px 20px 60px;
+    margin: 0px 0px 40px 60px;
 }
 
 nav.navSpacecraft {
@@ -229,17 +238,297 @@ a#aSelected {
 .spacecraft h1 {
     width: 34.25rem;
     margin: 40px 0px 0px 35px;
+
+    color: #000;
+    font-family: "Public Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
-.spacecraft p {
+.spacecraft p:nth-child(even) {
+    width: 34.25rem;
+    margin-left: 35px;
+
+    color: #000;
+    font-family: "Public Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.spacecraft p:nth-child(odd) {
     width: 34.25rem;
     margin-left: 35px;
 }
+
 .spacecraft h2 {
     width: 34.25rem;
     margin-left: 35px;
+
+    color: #000;
+    font-family: "Public Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 section.meetCrew {
     height: 31.25rem;
     background: #1B1B1B;
+
+    width: 100vw;
+}
+
+section.meetCrew h1 {
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    padding: 30px 0px 0px 30px;
+}
+
+section.meetCrew > p {
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    margin: 20px 0px 0px 30px;
+}
+
+div.memberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-right: 15px;
+}
+
+div.crewMember {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 15px;
+    margin-top: 25px;
+}
+
+div.crewMember img {
+    width: 18.375rem;
+    height: 13.375rem;
+}
+
+div.crewMember h2 {
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+div.crewMember p {
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+div.crewMember h3 {
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+section.boldMission {
+    width: 100vw;
+    height: 31.25rem;
+
+    background: url(/assets/Rectangle\ 11.svg) black 50% / cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+section.boldMission h1 {
+    width: 41.25rem;
+    
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    margin: 0px 0px 25px 170px;
+}
+
+section.boldMission p {
+    width: 41.25rem;
+    
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1rem;
+
+    margin-left: 170px;
+}
+
+div.boldContainer {
+    margin: auto;
+}
+
+footer {
+    height: 31.25rem;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+
+    gap: 300px;
+
+    background: url(/assets/Rectangle\ 10.svg)#020307 50% / contain no-repeat;
+    background-position: 800px;
+}
+
+div#nasa {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin: 0px 40px 30px 30px;
+}
+
+footer div h2 {
+    width: 32rem;
+
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+footer div p {
+    width: 32rem;
+
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.125rem;
+}
+
+footer div p:nth-child(1){
+    width: 32rem;
+
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.80);;
+
+    display: flex;
+    min-width: 20rem;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start ;
+
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    gap: 20px;
+}
+
+form > div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 0.5rem;
+}
+
+form input {
+    display: flex;
+    min-width: 7.5rem;
+    padding: 0.75rem 1rem;
+    align-items: center;
+    align-self: stretch;
+
+    color: #B3B3B3;
+    font-size: 1rem;
+
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    /* width: 100%;
+
+    color: #B3B3B3;
+    font-size: 1rem;
+
+    border-radius: 8px;
+    border: 1px solid #D9D9D9; */
+}
+
+form textarea {
+    display: flex;
+    min-width: 7.5rem;
+    min-height: 5rem;
+    padding: 0.75rem 1rem;
+    align-items: flex-start;
+    align-self: stretch;
+
+    font-family: "Public Sans";
+    color: #B3B3B3;
+    font-size: 1rem;
+
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    /* width: 100%; */
+}
+
+form input, textarea {
+    outline: none;
+    padding: 10px;
+}
+
+form label {
+    color: #1E1E1E;
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 1.4rem */
+}
+
+form div input:nth-child(1) {
+    color: #fff;
+    font-weight: 700;
+    font-family: "Public Sans";
+
+    cursor: pointer;
+
+    border-radius: 8px;
+    border: 1px solid #2C2C2C;
+    background: #FC3D21;
+}
+
+form div input:nth-child(1):hover {
+    background: #ce2e15;
 }

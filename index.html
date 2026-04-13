@@ -211,50 +211,76 @@
         <section class="meetCrew">
             <h1>Meet the Crew</h1>
             <p>These explorers represent the best of humanity, daring to forge new frontiers in space on behalf of all of humanity.</p>
-            <div class="crewMember">
-                <h2>Reid Wiseman</h2>
-                <p>Commander</p>
-                <h3>Bio and More on Reid</h3>
-            </div>
-            <div class="crewMember">
-                <h2>Victor Glover</h2>
-                <p>Pilot</p>
-                <h3>Bio and More on Victor</h3>
-            </div>
-            <div class="crewMember">
-                <h2>Christina Koch</h2>
-                <p>Mission Specialist</p>
-                <h3>Bio and More on Christina</h3>
-            </div>
-            <div class="crewMember">
-                <h2>Jeremy Hansen</h2>
-                <p>Commander</p>
-                <h3>Bio and More on Jeremy</h3>
+            <div class="memberContainer">
+                <div class="crewMember">
+                    <img src="assets/Rectangle 5.svg" alt="">
+                    <h2>Reid Wiseman</h2>
+                    <p>Commander</p>
+                    <h3>Bio and More on Reid</h3>
+                </div>
+                <div class="crewMember">
+                    <img src="assets/Rectangle 8.svg" alt="">
+                    <h2>Victor Glover</h2>
+                    <p>Pilot</p>
+                    <h3>Bio and More on Victor</h3>
+                </div>
+                <div class="crewMember">
+                    <img src="assets/Rectangle 7.svg" alt="">
+                    <h2>Christina Koch</h2>
+                    <p>Mission Specialist</p>
+                    <h3>Bio and More on Christina</h3>
+                </div>
+                <div class="crewMember">
+                    <img src="assets/Rectangle 6.svg" alt="">
+                    <h2>Jeremy Hansen</h2>
+                    <p>Commander</p>
+                    <h3>Bio and More on Jeremy</h3>
+                </div>
             </div>
         </section>
-        <section>
-            <h1>A Bold Mission</h1>
-            <p>The crew of four astronauts will lift off on the approximately 10-day mission from Launch Complex 39B at NASA’s Kennedy Space Center in Florida, blazing beyond Earth’s grasp atop the agency’s mega Moon rocket. Over the course of about two days, they will check out Orion’s systems and perform a targeting demonstration test relatively close to Earth before then beginning the trek toward the Moon.
-            Orion’s European-built service module will give the spacecraft the big push needed to break free from Earth orbit set course for the Moon. This trans-lunar injection burn will send the astronauts on an outbound trip of about four days, taking them around the far side of the Moon, where they will ultimately create a figure eight extending more than 230,000 miles from Earth. At their max distance, the crew will fly 4,600 miles beyond the Moon. During the approximate four-day return trip, the astronauts will continue to evaluate the spacecraft’s systems.
-            Instead of requiring propulsion on the return, this fuel-efficient trajectory harnesses the Earth-Moon gravity field, ensuring that—after its trip around the far side of the Moon—Orion will be pulled back naturally by Earth’s gravity for the free return portion of the mission.
-            The crew will endure the high-speed, high-temperature reentry through Earth’s atmosphere before splashing down in the Pacific Ocean off the coast of San Diego, where they will be met by a recovery team of NASA and Department of Defense personnel who will bring them back to shore.</p>
+        <section class="boldMission">
+            <div class="boldContainer">
+                <h1>A Bold Mission</h1>
+                <p>The crew of four astronauts will lift off on the approximately 10-day mission from Launch Complex 39B at NASA’s Kennedy Space Center in Florida, blazing beyond Earth’s grasp atop the agency’s mega Moon rocket. Over the course of about two days, they will check out Orion’s systems and perform a targeting demonstration test relatively close to Earth before then beginning the trek toward the Moon.
+                    <br>
+                Orion’s European-built service module will give the spacecraft the big push needed to break free from Earth orbit set course for the Moon. This trans-lunar injection burn will send the astronauts on an outbound trip of about four days, taking them around the far side of the Moon, where they will ultimately create a figure eight extending more than 230,000 miles from Earth. At their max distance, the crew will fly 4,600 miles beyond the Moon. During the approximate four-day return trip, the astronauts will continue to evaluate the spacecraft’s systems.
+                <br>
+                Instead of requiring propulsion on the return, this fuel-efficient trajectory harnesses the Earth-Moon gravity field, ensuring that—after its trip around the far side of the Moon—Orion will be pulled back naturally by Earth’s gravity for the free return portion of the mission.
+                <br>
+                The crew will endure the high-speed, high-temperature reentry through Earth’s atmosphere before splashing down in the Pacific Ocean off the coast of San Diego, where they will be met by a recovery team of NASA and Department of Defense personnel who will bring them back to shore.</p>
+            </div>
         </section>
     </main>
     <footer>
-            logo
-            <h2>National Aeronautics and Space Administration</h2>
-            <p>NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
-            <p>About NASA's Mission</p>
-            <p>Join Us</p>
+            <div id="nasa">
+                <img src="assets/nasa_logo.svg" alt="">
+                <h2>National Aeronautics and Space Administration</h2>
+                <p>NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+                <p>About NASA's Mission</p>
+                <p>Join Us</p>
+            </div>
 
             <form action="#">
-                <span>Nome</span>
-                <input type="text" name="" id="">
-                <span>Email</span>
-                <input type="email" name="" id="">
-                <span>Message</span>
-                <textarea name="" id=""></textarea>
-                <input type="submit" value="Submit">
+
+                <div>
+                    <label>Nome</label>
+                    <input type="text" name="" id="" placeholder="Value">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="" id="" placeholder="Value">
+                </div>
+
+                <div>
+                    <label>Message</label>
+                    <textarea name="" id="" placeholder="Value"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+
             </form>
         </footer>
 </body>
